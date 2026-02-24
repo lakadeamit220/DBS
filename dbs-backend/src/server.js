@@ -1,9 +1,13 @@
-const express = require('express');
+// src/server.js
+import express from 'express';
 
 const app = express();
 
 app.get('/health', (req, res) => {
-    res.json({ status: 'ok', message: 'Backend is alive' });
+    res.json({
+        status: 'ok',
+        message: 'Backend is alive (ES6 Modules)'
+    });
 });
 
 const PORT = 5000;
